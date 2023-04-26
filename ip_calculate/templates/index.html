@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Ip hacker {% endblock %}
+{% load static %}
+
+
+{% block content %}
+    <video autoplay muted loop id="background">
+      <source src="{%static 'video/rrrrr.mp4'%}" type="video/mp4">
+    </video>
+
+    <div class="container">
+      <h1>IP Address Calculator</h1>
+      <form method="GET" action="{% url 'calculate' %}">
+        <label>IP Address:</label>
+        <input type="text" class="form-control" name="ip-address" placeholder="Enter IP address..." value="">
+        <input type="submit" value="Calculate">
+      </form>
+      <div class="result">
+        <p>Org: {{Org}} <span id="subnet-mask"></span></p>
+        <p>Prov: {{prov}}<span id="network-address"></span></p>
+        <p>Country: {{Country}} <span id="first-address"></span></p>
+        <p>Region name: {{RegionName}}<span id="last-address"></span></p>
+        <p>City: {{City}}<span id="broadcast-address"></span></p>
+        <p>Timezone: {{Timezone}} <span id="total-hosts"></span></p>
+        <p>AS: {{AS}}</p>
+      </div>
+    </div>
+
+{% endblock %}

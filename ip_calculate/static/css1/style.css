@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border: 1px solid #666;
+  border-radius: 5px;
+
+  transform: translateY(50px);
+  top: 0;
+  left: 0;
+  right: 0;
+
+  position: absolute;
+  z-index: 3;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px 16px;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3b6dc2;
+  box-shadow: 0px 0px 5px #3b6dc2;
+}
+
+.form-control:focus + label {
+  top: -16px;
+  left: 8px;
+  font-size: 14px;
+  color: #3b6dc2;
+}
+
+.form-control.valid {
+  border-color: #8bc34a;
+}
+
+.form-control.valid + label {
+  top: -16px;
+  left: 8px;
+  font-size: 14px;
+  color: #8bc34a;
+}
+
+.form-control.invalid {
+  border-color: #f44336;
+}
+
+.form-control.invalid + label {
+  top: -16px;
+  left: 8px;
+  font-size: 14px;
+  color: #f44336;
+}
+
+.form-control + label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 16px;
+  font-weight: normal;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+input[type="submit"] {
+  background-color: #4CAF50; /* задаємо колір фону кнопки */
+  border: none; /* видаляємо границі */
+  color: white; /* задаємо колір тексту */
+  padding: 12px 24px; /* задаємо відступи внутрішнього вмісту кнопки */
+  text-align: center; /* вирівнюємо текст по центру */
+  text-decoration: none; /* видаляємо підкреслення тексту */
+  display: inline-block; /* змінюємо властивість відображення на блокове, щоб можна було задати відступи */
+  font-size: 16px; /* задаємо розмір шрифту */
+  border-radius: 5px; /* задаємо радіус кутів */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* додаємо тінь */
+  cursor: pointer; /* змінюємо курсор при наведенні */
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41; /* змінюємо колір фону при наведенні на кнопку */
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+
