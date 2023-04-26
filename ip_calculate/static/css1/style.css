@@ -46,6 +46,7 @@ label {
   padding: 10px 16px;
   width: 100%;
   height: 50px;
+  margin-bottom: 30px;
   border: 2px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
@@ -124,5 +125,3 @@ input[type="submit"]:hover {
   font-weight: bold;
   color: #4CAF50;
 }
-
-
